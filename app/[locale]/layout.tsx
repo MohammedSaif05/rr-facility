@@ -8,6 +8,7 @@ import "../globals.css";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingWhatsApp from '@/components/layout/FloatingWhatsApp';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { getLocalBusinessJsonLd, getOrganizationJsonLd } from '@/lib/seo';
 
 const inter = Inter({
@@ -90,6 +91,7 @@ export default async function RootLayout({
           <main className="flex-1 flex flex-col">{children}</main>
           <Footer />
           <FloatingWhatsApp />
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
