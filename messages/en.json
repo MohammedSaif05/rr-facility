@@ -1,5 +1,159 @@
 {
   "Index": {
     "title": "Refined Radiance Facility Management"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "gallery": "Gallery",
+    "careers": "Careers",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "trusted": "Qatar's Premium Facility Management",
+    "title1": "Refined Radiance",
+    "title2": "Facility Management",
+    "subtitle": "Comprehensive cleaning and facility management services in Qatar. We deliver pristine environments for homes and corporate spaces with unmatched reliability.",
+    "explore": "Explore Services",
+    "contact": "Get a Free Quote"
+  },
+  "Services": {
+    "coreServices": "Our Core Services",
+    "subtitle": "Specialized facility management and cleaning solutions tailored to your specific needs.",
+    "learnMore": "Learn more",
+    "homeCleaning": {
+      "title": "Home Cleaning",
+      "desc": "Thorough cleaning for residential properties, ensuring a pristine living space."
+    },
+    "officeCleaning": {
+      "title": "Office / Commercial Cleaning",
+      "desc": "Maintain a professional and spotless environment for your business."
+    },
+    "windowCleaning": {
+      "title": "Window & Glass Cleaning",
+      "desc": "Streak-free window cleaning for clear views and brighter spaces."
+    },
+    "kitchenCleaning": {
+      "title": "Kitchen Deep Cleaning",
+      "desc": "Intensive sanitization for commercial and residential kitchens."
+    },
+    "carpetCleaning": {
+      "title": "Carpet & Sofa Shampooing",
+      "desc": "Deep extraction cleaning to revitalize your carpets and upholstery."
+    },
+    "premiumSolutions": "Premium {title} Solutions in Qatar",
+    "overview": "Service Overview",
+    "overviewText": "Experience the pinnacle of cleanliness with our specialized service. We utilize state-of-the-art equipment, eco-friendly products, and highly trained professionals to ensure every corner of your space meets the highest standards of hygiene and aesthetics.",
+    "whatsIncluded": "What's Included",
+    "ready": "Ready to Transform Your Space?",
+    "bookToday": "Book our service today and enjoy a spotless, luxurious environment.",
+    "requestQuote": "Request a Quote",
+    "orCall": "Or call us directly at",
+    "inclusions": {
+      "assessment": "Comprehensive area assessment",
+      "ecoProducts": "Eco-friendly cleaning products",
+      "sanitization": "Deep sanitization of surfaces",
+      "trainedStaff": "Trained professional staff",
+      "qualityCheck": "Quality assurance check",
+      "guarantee": "100% Satisfaction guarantee"
+    }
+  },
+  "WhyUs": {
+    "whyChooseUs": "Why Choose Us",
+    "title": "Excellence in Every Detail",
+    "staff": "Trained & Verified Staff",
+    "staffDesc": "Our team undergoes rigorous background checks and professional training.",
+    "eco": "Eco-Friendly Products",
+    "ecoDesc": "We use safe, sustainable cleaning products that protect your health and the environment.",
+    "punctual": "Punctual & Reliable",
+    "punctualDesc": "We value your time. Our team arrives on schedule, every time.",
+    "guarantee": "Satisfaction Guarantee",
+    "guaranteeDesc": "We are committed to excellence. If you are not satisfied, we will make it right."
+  },
+  "Gallery": {
+    "inside": "Inside Our Company",
+    "glimpse": "A Glimpse of Excellence",
+    "desc": "Take a look inside Refined Radiance and see the pristine standards we uphold every single day.",
+    "viewFull": "View Full Image"
+  },
+  "About": {
+    "defining": "Defining Excellence in",
+    "fm": "Facility Management",
+    "story": "Our Story",
+    "legacy": "A Legacy of Pristine Environments",
+    "p1": "Refined Radiance Facility Management was born from a singular vision: to elevate the standard of cleanliness and property care in Qatar.",
+    "p2": "Building upon the success and trusted reputation of our sister company, Refined Radiance Cleaning, we expanded our expertise to offer comprehensive, end-to-end facility management. Today, we are proud to serve some of the most prestigious residential and commercial properties across Doha, Al Wakrah, and beyond.",
+    "leadership": "Leadership & Vision",
+    "founder": "Babu Abdul Kadar — Founder",
+    "quote": "\"Our goal has never been just to clean a space. Our goal is to craft environments where people can thrive, businesses can prosper, and peace of mind is guaranteed. At Refined Radiance, excellence isn't just a promise—it's our standard.\"",
+    "mission": "Our Mission",
+    "missionText": "To deliver unparalleled facility management services that ensure hygiene, safety, and aesthetic brilliance. We strive to build long-lasting partnerships with our clients through relentless reliability and an uncompromising eye for detail.",
+    "vision": "Our Vision",
+    "visionText": "To be the most trusted and innovative facility management provider in Qatar, renowned for our sustainable practices, elite workforce, and exceptional customer satisfaction."
+  },
+  "Careers": {
+    "join": "Join Our",
+    "elite": "Elite Team",
+    "desc": "We are looking for dedicated professionals to join Refined Radiance. Build a rewarding career in facility management with comprehensive benefits.",
+    "role": "Professional Staff (Direct Recruitment)",
+    "roleDesc": "We are directly recruiting on-site for dedicated individuals to join our premium cleaning and facility management crew. We offer highly competitive packages to ensure our staff are well taken care of.",
+    "benefits": "Job Benefits & Details",
+    "applyNow": "Apply Now",
+    "fillForm": "Fill out the form below and our recruitment team will contact you directly.",
+    "fullName": "Full Name",
+    "phone": "Phone Number (WhatsApp)",
+    "age": "Age",
+    "country": "Country",
+    "submit": "Submit Application",
+    "agreement": "By submitting, you agree to our recruitment policies. Only shortlisted candidates will be contacted.",
+    "salary": "Basic Salary",
+    "salaryVal": "1000 QAR",
+    "allowance": "Other Allowance",
+    "allowanceVal": "200 QAR",
+    "overtime": "Overtime Allowance",
+    "overtimeVal": "Available",
+    "accommodation": "Accommodation",
+    "accommodationVal": "Company Provided",
+    "transport": "Transportation",
+    "transportVal": "Company Provided",
+    "health": "Health Card",
+    "healthVal": "Gov. Health card provided",
+    "hours": "Duty Hours",
+    "hoursVal": "8 hours/day",
+    "weeklyOff": "Weekly Off",
+    "weeklyOffVal": "1 day per week",
+    "ageReq": "Age Requirement",
+    "ageReqVal": "20 to 39 years",
+    "contract": "Contract",
+    "contractVal": "2 years contract"
+  },
+  "Contact": {
+    "getInTouch": "Get in",
+    "touch": "Touch",
+    "desc": "Whether you need a free quote, have a question about our services, or want to discuss a custom facility management plan, our team is ready to help.",
+    "info": "Contact Information",
+    "office": "Our Office",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Working Hours",
+    "hoursVal": "Sat - Thu: 8AM - 6PM\nFriday: Closed",
+    "sendMsg": "Send us a Message",
+    "formDesc": "Fill out the form below and we will get back to you shortly.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "emailAddr": "Email Address",
+    "service": "Service Needed",
+    "other": "Other Facility Services",
+    "msg": "Your Message",
+    "submit": "Send Message"
+  },
+  "Footer": {
+    "company": "Refined Radiance Facility Management",
+    "tagline": "Premium facility management and specialized cleaning services across Qatar, delivering excellence in every detail.",
+    "partOf": "Part of the Refined Radiance Group",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "copyright": "© 2026 Refined Radiance Facility Management. All rights reserved."
   }
 }

@@ -1,9 +1,12 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Target, Lightbulb, Users } from 'lucide-react';
 
 export default function AboutClient() {
+  const t = useTranslations('About');
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -33,8 +36,8 @@ export default function AboutClient() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold text-foreground mb-6 tracking-tight"
           >
-            Defining Excellence in <br className="hidden md:block" />
-            <span className="text-primary">Facility Management</span>
+            {t('defining')} <br className="hidden md:block" />
+            <span className="text-primary">{t('fm')}</span>
           </motion.h1>
         </div>
       </section>
@@ -48,15 +51,11 @@ export default function AboutClient() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Our Story</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">A Legacy of Pristine Environments</h2>
+            <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">{t('story')}</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">{t('legacy')}</h2>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Refined Radiance Facility Management was born from a singular vision: to elevate the standard of cleanliness and property care in Qatar.
-              </p>
-              <p>
-                Building upon the success and trusted reputation of our sister company, <strong className="text-foreground font-semibold">Refined Radiance Cleaning</strong>, we expanded our expertise to offer comprehensive, end-to-end facility management. Today, we are proud to serve some of the most prestigious residential and commercial properties across Doha, Al Wakrah, and beyond.
-              </p>
+              <p>{t('p1')}</p>
+              <p>{t('p2')}</p>
             </div>
           </motion.div>
           <motion.div 
@@ -92,10 +91,10 @@ export default function AboutClient() {
               <Users size={40} />
             </div>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4 mt-4">Leadership & Vision</h2>
-            <p className="text-xl text-primary font-medium mb-10">Babu Abdul Kadar — Founder</p>
+            <h2 className="text-3xl font-bold text-foreground mb-4 mt-4">{t('leadership')}</h2>
+            <p className="text-xl text-primary font-medium mb-10">{t('founder')}</p>
             <blockquote className="text-2xl md:text-3xl text-muted-foreground italic leading-relaxed font-light">
-              "Our goal has never been just to clean a space. Our goal is to craft environments where people can thrive, businesses can prosper, and peace of mind is guaranteed. At Refined Radiance, excellence isn't just a promise—it's our standard."
+              {t('quote')}
             </blockquote>
           </motion.div>
         </div>
@@ -114,9 +113,9 @@ export default function AboutClient() {
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
               <Target className="text-primary" size={32} strokeWidth={2} />
             </div>
-            <h3 className="text-3xl font-bold text-foreground mb-4">Our Mission</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-4">{t('mission')}</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To deliver unparalleled facility management services that ensure hygiene, safety, and aesthetic brilliance. We strive to build long-lasting partnerships with our clients through relentless reliability and an uncompromising eye for detail.
+              {t('missionText')}
             </p>
           </motion.div>
 
@@ -130,9 +129,9 @@ export default function AboutClient() {
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
               <Lightbulb className="text-primary" size={32} strokeWidth={2} />
             </div>
-            <h3 className="text-3xl font-bold text-foreground mb-4">Our Vision</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-4">{t('vision')}</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To be the most trusted and innovative facility management provider in Qatar, renowned for our sustainable practices, elite workforce, and exceptional customer satisfaction.
+              {t('visionText')}
             </p>
           </motion.div>
         </div>

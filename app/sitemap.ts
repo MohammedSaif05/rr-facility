@@ -10,7 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about',
     '/contact',
     '/careers',
-    '/gallery',
     '/services',
     '/service-areas',
     ...siteConfig.services.map(s => `/services/${s.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and')}`),

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const galleryImages = [
   { src: '/images/gallery/rr-facility-portrait-1.jpeg', alt: 'Refined Radiance Facility Management Team', className: 'md:col-span-1 md:row-span-2 min-h-[350px] md:min-h-0' },
@@ -13,6 +14,7 @@ const galleryImages = [
 ];
 
 export default function HomeGallery() {
+  const t = useTranslations('Gallery');
   const [selectedImage, setSelectedImage] = useState<{src: string, alt: string} | null>(null);
 
   return (
@@ -25,9 +27,9 @@ export default function HomeGallery() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Inside Our Company</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">A Glimpse of Excellence</h2>
-          <p className="text-muted-foreground text-lg">Take a look inside Refined Radiance and see the pristine standards we uphold every single day.</p>
+          <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">{t('inside')}</span>
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">{t('glimpse')}</h2>
+          <p className="text-muted-foreground text-lg">{t('desc')}</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 md:auto-rows-[280px] gap-6">
@@ -53,7 +55,7 @@ export default function HomeGallery() {
               {/* Overlay hint icon */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="bg-black/50 backdrop-blur-sm text-white px-6 py-3 rounded-full font-semibold border border-white/20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  View Full Image
+                  {t('viewFull')}
                 </div>
               </div>
             </motion.div>

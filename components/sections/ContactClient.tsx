@@ -1,10 +1,12 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { siteConfig } from '@/content/site-config';
 
 export default function ContactClient() {
+  const t = useTranslations('Contact');
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -43,7 +45,7 @@ export default function ContactClient() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold text-foreground mb-6 tracking-tight"
           >
-            Get in <span className="text-primary">Touch</span>
+            {t('getInTouch')} <span className="text-primary">{t('touch')}</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
@@ -51,7 +53,7 @@ export default function ContactClient() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Whether you need a free quote, have a question about our services, or want to discuss a custom facility management plan, our team is ready to help.
+            {t('desc')}
           </motion.p>
         </div>
       </section>
@@ -69,7 +71,7 @@ export default function ContactClient() {
             className="space-y-12"
           >
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-8">Contact Information</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-8">{t('info')}</h2>
               <div className="grid sm:grid-cols-2 gap-6">
                 
                 <div className="flex items-start space-x-5 rtl:space-x-reverse bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
@@ -77,7 +79,7 @@ export default function ContactClient() {
                     <MapPin size={26} />
                   </div>
                   <div className="flex-1 mt-1">
-                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">Our Office</h4>
+                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">{t('office')}</h4>
                     <p className="text-foreground text-lg font-medium leading-relaxed">{siteConfig.contact.address}</p>
                   </div>
                 </div>
@@ -87,7 +89,7 @@ export default function ContactClient() {
                     <Phone size={26} />
                   </div>
                   <div className="flex-1 mt-1">
-                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">Phone</h4>
+                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">{t('phone')}</h4>
                     <p className="text-foreground text-lg font-medium leading-relaxed" dir="ltr">{siteConfig.contact.phone}</p>
                   </div>
                 </div>
@@ -97,7 +99,7 @@ export default function ContactClient() {
                     <Mail size={26} />
                   </div>
                   <div className="flex-1 mt-1">
-                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">Email</h4>
+                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">{t('email')}</h4>
                     <p className="text-foreground text-base font-medium leading-relaxed break-all">{siteConfig.contact.email}</p>
                   </div>
                 </div>
@@ -107,8 +109,8 @@ export default function ContactClient() {
                     <Clock size={26} />
                   </div>
                   <div className="flex-1 mt-1">
-                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">Working Hours</h4>
-                    <p className="text-foreground text-lg font-medium leading-relaxed">Sat - Thu: 8AM - 6PM<br/>Friday: Closed</p>
+                    <h4 className="text-xs uppercase tracking-wider text-muted-foreground font-bold mb-2">{t('hours')}</h4>
+                    <p className="text-foreground text-lg font-medium leading-relaxed whitespace-pre-line">{t('hoursVal')}</p>
                   </div>
                 </div>
 
@@ -143,16 +145,15 @@ export default function ContactClient() {
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/30 to-transparent blur-2xl z-0 pointer-events-none" />
               
               <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-foreground mb-2">Send us a Message</h3>
-                <p className="text-muted-foreground mb-8">Fill out the form below and we will get back to you shortly.</p>
+                <h3 className="text-3xl font-bold text-foreground mb-2">{t('sendMsg')}</h3>
+                <p className="text-muted-foreground mb-8">{t('formDesc')}</p>
 
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">First Name</label>
+                      <label className="block text-sm font-semibold text-foreground mb-2">{t('firstName')}</label>
                       <input 
                         type="text" 
-                        placeholder="John" 
                         value={formData.firstName}
                         onChange={(e) => setFormData({...formData, firstName: e.target.value})}
                         className="w-full p-4 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" 
@@ -160,10 +161,9 @@ export default function ContactClient() {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">Last Name</label>
+                      <label className="block text-sm font-semibold text-foreground mb-2">{t('lastName')}</label>
                       <input 
                         type="text" 
-                        placeholder="Doe" 
                         value={formData.lastName}
                         onChange={(e) => setFormData({...formData, lastName: e.target.value})}
                         className="w-full p-4 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" 
@@ -172,18 +172,18 @@ export default function ContactClient() {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">Email Address</label>
+                    <label className="block text-sm font-semibold text-foreground mb-2">{t('emailAddr')}</label>
                     <input 
                       type="email" 
-                      placeholder="john@example.com" 
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       className="w-full p-4 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow" 
                       required 
+                      dir="ltr"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">Service Needed</label>
+                    <label className="block text-sm font-semibold text-foreground mb-2">{t('service')}</label>
                     <div className="relative">
                       <select 
                         value={formData.service}
@@ -195,7 +195,7 @@ export default function ContactClient() {
                         <option value="Window Cleaning">Window & Glass Cleaning</option>
                         <option value="Kitchen Deep Cleaning">Kitchen Deep Cleaning</option>
                         <option value="Carpet Shampooing">Carpet & Sofa Shampooing</option>
-                        <option value="Other">Other Facility Services</option>
+                        <option value="Other">{t('other')}</option>
                       </select>
                       <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-muted-foreground rtl:right-auto rtl:left-0">
                         <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -203,9 +203,8 @@ export default function ContactClient() {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-foreground mb-2">Your Message</label>
+                    <label className="block text-sm font-semibold text-foreground mb-2">{t('msg')}</label>
                     <textarea 
-                      placeholder="How can we help you today?" 
                       rows={4} 
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -215,7 +214,7 @@ export default function ContactClient() {
                   </div>
                   <div className="pt-4">
                     <button type="submit" className="w-full bg-primary text-primary-foreground font-bold p-4 rounded-xl hover:bg-primary/90 hover:scale-[1.02] transition-all shadow-lg shadow-primary/25">
-                      Send Message
+                      {t('submit')}
                     </button>
                   </div>
                 </form>
