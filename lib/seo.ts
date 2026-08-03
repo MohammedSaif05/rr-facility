@@ -58,7 +58,7 @@ export function getJobPostingJsonLd() {
   const datePosted = new Date().toISOString().split('T')[0];
   const validThrough = new Date();
   validThrough.setMonth(validThrough.getMonth() + 6); // Valid for 6 months
-  
+
   return {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
@@ -67,7 +67,7 @@ export function getJobPostingJsonLd() {
     identifier: {
       '@type': 'PropertyValue',
       name: siteConfig.name,
-      value: 'RR-FM-2024'
+      value: 'RR-FM-2026'
     },
     datePosted: datePosted,
     validThrough: validThrough.toISOString().split('T')[0],
