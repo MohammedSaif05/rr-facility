@@ -1,5 +1,14 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import ServicesGrid from '@/components/sections/ServicesGrid';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+  return {
+    title: t('servicesTitle'),
+    description: t('servicesDesc'),
+  };
+}
 
 export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

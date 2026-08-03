@@ -154,6 +154,18 @@
     "partOf": "Part of the Refined Radiance Group",
     "quickLinks": "Quick Links",
     "contact": "Contact Us",
-    "copyright": "© 2026 Refined Radiance Facility Management. All rights reserved."
+    "copyright": "© 2024 Refined Radiance Facility Management. All rights reserved."
+  },
+  "Metadata": {
+    "homeTitle": "Home",
+    "homeDesc": "Qatar's Premium Facility Management. Comprehensive cleaning and facility management services for residential and commercial spaces.",
+    "aboutTitle": "About Us",
+    "aboutDesc": "Learn about Refined Radiance, our history, mission, and dedication to excellence in facility management across Qatar.",
+    "servicesTitle": "Our Services",
+    "servicesDesc": "Explore our premium cleaning and facility management services including home, office, window, kitchen, and carpet cleaning.",
+    "careersTitle": "Careers",
+    "careersDesc": "Join the Refined Radiance team. Explore career opportunities in facility management with great benefits in Qatar.",
+    "contactTitle": "Contact Us",
+    "contactDesc": "Get in touch with Refined Radiance for a free quote or any inquiries regarding our facility management services."
   }
 }

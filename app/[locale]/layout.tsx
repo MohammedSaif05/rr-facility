@@ -8,7 +8,7 @@ import "../globals.css";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingWhatsApp from '@/components/layout/FloatingWhatsApp';
-import { getLocalBusinessJsonLd } from '@/lib/seo';
+import { getLocalBusinessJsonLd, getOrganizationJsonLd } from '@/lib/seo';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,9 +20,36 @@ const cairo = Cairo({
   subsets: ["latin", "arabic"],
 });
 
+import { siteConfig } from '@/content/site-config';
+
 export const metadata: Metadata = {
-  title: "Refined Radiance Facility Management",
-  description: "Facility management and cleaning services in Qatar.",
+  metadataBase: new URL(`https://${siteConfig.domain}`),
+  title: {
+    template: '%s | Refined Radiance',
+    default: 'Refined Radiance Facility Management | Qatar',
+  },
+  description: 'Premium facility management and specialized cleaning services across Qatar.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_QA',
+    alternateLocale: 'ar_QA',
+    url: '/',
+    siteName: 'Refined Radiance',
+    images: [
+      {
+        url: '/images/hero.png',
+        width: 1200,
+        height: 630,
+        alt: 'Refined Radiance Facility Management',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Refined Radiance Facility Management',
+    description: 'Premium facility management and specialized cleaning services across Qatar.',
+    images: ['/images/hero.png'],
+  },
 };
 
 export function generateStaticParams() {
@@ -56,7 +83,7 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(getLocalBusinessJsonLd()) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify([getLocalBusinessJsonLd(), getOrganizationJsonLd()]) }}
         />
         <NextIntlClientProvider messages={messages}>
           <Header />
