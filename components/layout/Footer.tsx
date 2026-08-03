@@ -45,15 +45,15 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-4 text-foreground">{t('contact')}</h3>
           <ul className="space-y-3 text-sm text-secondary-foreground/80">
-            <li className="flex items-start space-x-2 rtl:space-x-reverse">
+            <li className="flex items-start gap-2">
               <span className="font-medium text-primary">P:</span>
               <span dir="ltr">{siteConfig.contact.phone}</span>
             </li>
-            <li className="flex items-start space-x-2 rtl:space-x-reverse">
+            <li className="flex items-start gap-2">
               <span className="font-medium text-primary">E:</span>
               <span>{siteConfig.contact.email}</span>
             </li>
-            <li className="flex items-start space-x-2 rtl:space-x-reverse">
+            <li className="flex items-start gap-2">
               <span className="font-medium text-primary">A:</span>
               <span>{siteConfig.contact.address}</span>
             </li>

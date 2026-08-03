@@ -74,7 +74,7 @@ export default function ContactClient() {
               <h2 className="text-3xl font-bold text-foreground mb-8">{t('info')}</h2>
               <div className="grid sm:grid-cols-2 gap-6">
                 
-                <div className="flex items-start space-x-5 rtl:space-x-reverse bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
+                <div className="flex items-start gap-5 bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <MapPin size={26} />
                   </div>
@@ -84,7 +84,7 @@ export default function ContactClient() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-5 rtl:space-x-reverse bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
+                <div className="flex items-start gap-5 bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <Phone size={26} />
                   </div>
@@ -94,7 +94,7 @@ export default function ContactClient() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-5 rtl:space-x-reverse bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
+                <div className="flex items-start gap-5 bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <Mail size={26} />
                   </div>
@@ -104,7 +104,7 @@ export default function ContactClient() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-5 rtl:space-x-reverse bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
+                <div className="flex items-start gap-5 bg-card p-6 rounded-3xl border border-border/50 shadow-sm h-full hover:border-primary/30 transition-colors">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <Clock size={26} />
                   </div>

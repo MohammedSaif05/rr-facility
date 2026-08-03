@@ -81,7 +81,7 @@ export default function CareersClient() {
           className="lg:col-span-3 space-y-12"
         >
           <div>
-            <div className="flex items-center space-x-3 rtl:space-x-reverse mb-6">
+            <div className="flex items-center gap-3 mb-6">
               <span className="bg-primary/20 text-primary px-4 py-1.5 rounded-full text-sm font-bold tracking-wider">Qatar</span>
               <span className="bg-muted text-muted-foreground px-4 py-1.5 rounded-full text-sm font-bold flex items-center">
                 <MapPin size={14} className="mr-1 rtl:ml-1 rtl:mr-0" /> On-site
@@ -97,7 +97,7 @@ export default function CareersClient() {
             <h3 className="text-2xl font-bold text-foreground mb-8 pb-4 border-b border-border/50">{t('benefits')}</h3>
             <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start space-x-4 rtl:space-x-reverse">
+                <div key={index} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <benefit.icon size={22} />
                   </div>

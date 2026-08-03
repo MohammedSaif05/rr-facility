@@ -83,7 +83,7 @@ export default function ServiceDetailClient({ title, slug }: { title: string, sl
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start space-x-3 rtl:space-x-reverse"
+                  className="flex items-start gap-3"
                 >
                   <CheckCircle2 className="text-primary shrink-0 mt-1" size={20} />
                   <span className="text-muted-foreground text-lg font-medium">{item}</span>
