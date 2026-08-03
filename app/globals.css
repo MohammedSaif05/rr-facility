@@ -2,25 +2,63 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #09090b; 
+  --primary: #d4af37; /* Metallic Gold from logo */
+  --primary-foreground: #000000;
+  --secondary: #f4f4f5; 
+  --secondary-foreground: #09090b;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a; 
+  --accent: #fef08a; 
+  --accent-foreground: #854d0e;
+  --border: #e4e4e7; 
+  --card: #ffffff;
+  --card-foreground: #09090b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000; /* Pure black to blend seamlessly with the logo */
+    --foreground: #fafafa;
+    --primary: #d4af37; /* Bright Metallic Gold */
+    --primary-foreground: #000000;
+    --secondary: #18181b; 
+    --secondary-foreground: #fafafa;
+    --muted: #27272a; 
+    --muted-foreground: #a1a1aa;
+    --accent: #3f3f46; 
+    --accent-foreground: #fafafa;
+    --border: #27272a;
+    --card: #09090b;
+    --card-foreground: #fafafa;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-cairo), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-arabic);
 }
