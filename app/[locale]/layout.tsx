@@ -26,8 +26,8 @@ import { siteConfig } from '@/content/site-config';
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${siteConfig.domain}`),
   title: {
-    template: '%s | Refined Radiance',
-    default: 'Refined Radiance Facility Management | Qatar',
+    template: '%s | New Refined Radiance',
+    default: 'New Refined Radiance Facility Management | Qatar',
   },
   description: 'Premium facility management and specialized cleaning services across Qatar.',
   openGraph: {
@@ -35,19 +35,19 @@ export const metadata: Metadata = {
     locale: 'en_QA',
     alternateLocale: 'ar_QA',
     url: '/',
-    siteName: 'Refined Radiance',
+    siteName: 'New Refined Radiance',
     images: [
       {
         url: '/images/hero.png',
         width: 1200,
         height: 630,
-        alt: 'Refined Radiance Facility Management',
+        alt: 'New Refined Radiance Facility Management',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Refined Radiance Facility Management',
+    title: 'New Refined Radiance Facility Management',
     description: 'Premium facility management and specialized cleaning services across Qatar.',
     images: ['/images/hero.png'],
   },

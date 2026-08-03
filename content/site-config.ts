@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Refined Radiance Facility Management",
+  name: "New Refined Radiance Facility Management",
   domain: "rrfacilityqatar.com",
   contact: {
     phone: "+974 7194 9557",

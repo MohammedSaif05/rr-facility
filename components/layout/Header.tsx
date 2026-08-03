@@ -36,7 +36,7 @@ export default function Header() {
           <div className="relative w-12 h-12 overflow-hidden rounded-xl bg-black/20 backdrop-blur-sm border border-primary/20 flex items-center justify-center group-hover:scale-105 transition-transform">
             <Image src="/images/logo.png" alt="Logo" fill className="object-contain p-2 drop-shadow-md" />
           </div>
-          <span className="font-bold text-xl md:text-2xl tracking-tight text-foreground group-hover:text-primary transition-colors">Refined Radiance</span>
+          <span className="font-bold text-xl md:text-2xl tracking-tight text-foreground group-hover:text-primary transition-colors">New Refined Radiance</span>
         </Link>
         
         {/* Desktop Nav */}
